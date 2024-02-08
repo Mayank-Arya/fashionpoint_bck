@@ -10,7 +10,7 @@ app.use(express.json())
 app.use(cors())
 
 app.get("/",(req,res)=>{
-    res.send("Hello EveryOne")
+    res.status(200).json("Hello EveryOne")
 })
 
 app.use("/users",userRouter)
